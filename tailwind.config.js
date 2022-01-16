@@ -15,6 +15,7 @@ module.exports = {
       secondary: "#ffc900",
       accent: "#086e7d",
       accent2: "#1a5f7a",
+      gray: colors.gray,
     },
     extend: {},
   },
