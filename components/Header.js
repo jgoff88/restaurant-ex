@@ -3,20 +3,20 @@ import BurgerMenu from "./BurgerMenu";
 
 export default function Header() {
   return (
-    <header className=' drop-shadow-md flex flex-row items-center bg-white text-gray-600 text-lg'>
-      <nav className='container mx-auto my-auto flex flex-row items-center justify-between p-3 border-b-2 border-gray-100 py-6  md:space-x-10 text-secondary '>
-        <div className='flex justify-start lg:w-0 lg:flex-1'>
+    <header className=' drop-shadow-md flex flex-row items-center bg-white text-accent text-lg'>
+      <nav className='container mx-auto my-auto flex flex-row items-center justify-between p-3 border-b-2 border-gray-100 py-6  md:space-x-10 '>
+        <div className=''>
           <a href='#'>
             <span className='sr-only'>Workflow</span>
             <img
-              className='w-auto h-20
+              className=' rounded h-8
             '
-              src='good.png'
+              src='good2.png'
               alt=''
             />
           </a>
         </div>
-        <div className='invisible md:visible lg:visible xl:visible 2xl:visible place-content-center'></div>
+
         <div className='invisible md:visible lg:visible xl:visible 2xl:visible'>
           <ul className='flex flex-row space-x-4 justify-between justify-items-start '>
             <li>
@@ -48,9 +48,9 @@ export default function Header() {
             </li>
           </ul>
         </div>
-        <div className='rounded shadow-md bg-accent2 text-gray-50 invisible md:visible lg:visible xl:visible 2xl:visible no-underline hover:underline decoration-sky-500'>
+        <button className='rounded shadow-md bg-secondary text-gray-100 px-3 py-2 invisible md:visible lg:visible xl:visible 2xl:visible no-underline hover:underline decoration-sky-500'>
           <h3>Order Here!</h3>
-        </div>
+        </button>
       </nav>
       <BurgerMenu></BurgerMenu>
     </header>
